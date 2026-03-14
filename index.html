@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaires Boulevard — CMDRs Toolbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hud-header">
+    <div class="hud-title">Billionaires Boulevard</div>
+    <div class="hud-subtitle">
+        fan-made recreation &nbsp;/&nbsp; 
+        <span>Bio Scan Route</span> &nbsp;/&nbsp; 
+        <span id="progress-label">0 / 0 scanned</span> &nbsp;/&nbsp;
+        <span> <a href="https://sh.orbis.zone/hvmNz49y0I">CORIOLIS: Diamondback explorer</a></span>
+    </div> 
+</div>
+
+<div class="stats-bar">
+    <div class="stat-chip">PROGRESS <b id="progress-pct">-</b></div>
+    <div class="stat-chip">Systems <b id="stat-systems">—</b></div>
+    <div class="stat-chip">Total Plants <b id="stat-plants">—</b></div>
+    <div class="stat-chip">Scanned <b id="stat-scanned">0</b></div>
+    <div class="stat-chip">Remaining <b id="stat-remaining">—</b></div>
+</div>
+
+<div class="progress-bar-wrap">
+    <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+    </div>
+</div>
+
+<div class="table-wrap">
+    <div class="corner-tl"></div><div class="corner-tr"></div>
+    <div class="corner-bl"></div><div class="corner-br"></div>
+
+    <table id="MatTable">
+        <thead>
+            <tr>
+                <th>System</th>
+                <th>Body</th>
+                <th>Plants to Scan</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<div class="hud-footer">
+    <div class="footer-tag">
+        New page made by: <span>CMDR amalgat</span><br>
+        contact me on Discord: <span>amalgat</span>
+    </div>
+    <div class="footer-tag">
+        <b>All Credits to "CMDR'S Toolbox" owners and developers for creating the original page</b>
+    </div>
+    <div style="display:flex;align-items:center;gap:1rem;">
+        <button class="copy-btn" onclick="ProgressReset()" style="margin:0;">Reset Progress</button>
+    </div>
+</div>
+
+<div id="welcome-overlay" class="welcome-overlay">
+    <div class="welcome-modal">
+        <div class="welcome-corner-tl"></div><div class="welcome-corner-tr"></div>
+        <div class="welcome-corner-bl"></div><div class="welcome-corner-br"></div>
+
+        <div class="welcome-header">
+            <div class="welcome-title">Billionaires Boulevard</div>
+            <div class="welcome-subtitle">Bio Scan Route &nbsp;/&nbsp; <span>Fan Preservation Project</span></div>
+        </div>
+
+        <div class="welcome-body">
+            <div class="welcome-section">
+                <div class="welcome-section-label">About</div>
+                <p>This is an interactive checklist for the <b>Billionaires Boulevard</b> biological scanning route in Elite Dangerous, originally published on <b>CMDR's Toolbox</b> (<code>cmdrs-toolbox.com</code>), which has since been sunset.</p>
+                <p>This page was created to preserve and openly share the route data with the Elite Dangerous community so it doesn't get lost.</p>
+                <p>I am <b>not</b> the original author of this data. Full credit goes to the developers and contributors behind CMDR's Toolbox for compiling and publishing this route.</p>
+            </div>
+
+            <div class="welcome-section">
+                <div class="welcome-section-label">Credits & Disclaimer</div>
+                <p><b>Route data:</b> Originally compiled and published by the developers of CMDR's Toolbox (now sunset).</p>
+                <p><b>Preservation & interface:</b> Created by me, for the community.</p>
+                <p><b>Game:</b> Elite Dangerous by Frontier Developments.</p>
+                <p>This project has no affiliation with Frontier Developments or the original CMDR's Toolbox team. It is a non-commercial, fan-made effort to keep useful community resources alive. If any original author has concerns, please contact me through Discord.</p>
+            </div>
+        </div>
+
+        <div class="welcome-footer">
+            <label class="welcome-suppress">
+                <input type="checkbox" id="suppress-welcome"> Don't show this again
+            </label>
+            <button class="welcome-btn" onclick="WelcomePopupClose()">Acknowledged &nbsp; o7</button>
+        </div>
+    </div>
+</div>
+
+<script src="./main.js"></script>
+</body>
+</html>
