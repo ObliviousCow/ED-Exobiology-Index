@@ -364,7 +364,6 @@ function SaveData() {
             state[checkbox.id] = checkbox.checked;
         }
     });
-    console.log("Saving: " + JSON.stringify(state))
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 }
 
