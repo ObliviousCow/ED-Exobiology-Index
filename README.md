@@ -24,5 +24,5 @@ This project has no affiliation with Frontier Developments or the original CMDR'
 It is a non-commercial, fan-made effort to keep useful community resources alive. If any original author has concerns about this preservation, please contact me through Discord.
 
 ---
-[My version](https://www.github.io/ObliviousCow/ED-Exobiology-Index)
-*fly safe, CMDRs o7*
+[My version](https://obliviouscow.github.io/ED-Exobiology-Index/)
+\n*fly safe, CMDRs o7*
