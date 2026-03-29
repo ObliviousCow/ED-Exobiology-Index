@@ -25,4 +25,5 @@ It is a non-commercial, fan-made effort to keep useful community resources alive
 
 ---
 [My version](https://obliviouscow.github.io/ED-Exobiology-Index/)
-\n*fly safe, CMDRs o7*
+
+*fly safe, CMDRs o7*
