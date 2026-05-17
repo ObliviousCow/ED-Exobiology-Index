@@ -21,13 +21,13 @@ const data = [
         system: "HIP 84676",
         body: "5 b",
         plants: ["Clypeus Lacrimam", "Frutexa Sponsae", "Osseus Discus", "Tussock Virgam"]
-        
+
     },
     {
         system: "HIP 86940",
         body: "2 a",
         plants: ["Cactoida Vermis", "Clypeus Lacrimam", "Frutexa Sponsae", "Osseus Discus", "Tussock Virgam"]
-        
+
     },
     {
         system: "Acurus",
@@ -394,14 +394,14 @@ function UpdateEverything() {
 
     document.getElementById('stat-systems').textContent = SystemsCount;
     document.getElementById('stat-plants').textContent = MaxPlants;
-    
+
 }
 
 function UpdateSystemCheckbox(rowIdx) {
     const plants = document.querySelectorAll(`.row-plant[data-row="${rowIdx}"]`);
     const sysCb = document.getElementById(`sys-${rowIdx}`);
     if (!sysCb) return;
-    
+
     sysCb.checked = [...plants].every(checkbox => checkbox.checked);
 }
 
@@ -412,9 +412,9 @@ function TogglePlantCheckbox(checkbox, itemId, rowIdx) {
         return;
     }
 
-    if (checkbox.checked) 
+    if (checkbox.checked)
         item.classList.add('checked');
-    else 
+    else
         item.classList.remove('checked');
 
     UpdateSystemCheckbox(rowIdx);
@@ -487,7 +487,7 @@ data.forEach((row, rowIdx) => {
                         <label for="cb-${rowIdx}-${i}">${p}</label>
                     </div>
                 `).join('')
-            }
+        }
         </td>
     `;
     tbody.appendChild(tr);
@@ -498,7 +498,7 @@ document.querySelectorAll('.plant-check').forEach(checkbox => {
     if (saved[checkbox.id]) {
         checkbox.checked = true;
         const item = checkbox.closest('.plant-item');
-        if (item) 
+        if (item)
             item.classList.add('checked');
         else
             console.log("Couldnt' find plant check for: " + checkbox);
